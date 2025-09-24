@@ -4,7 +4,7 @@ main{
     padding: 20px 40px 20px 40px;
     background-color: #FFF44F;
 }
-.wrapper {
+main > .wrapper {
     padding: 15px;
     background-color: #ADD8E6;
 }
@@ -23,6 +23,25 @@ main{
     color: blue;
     font-size: 16px;
 }
+.section-1.text-1{
+    color: yellow;
+}
+.section-1.text-1+span{
+    color: blue;
+}
+p>.section-2.text-2, .section-3.text-1{
+    color: cyan;
+}
+
+body .wrapper .section-4 .text-1{
+    color: green;
+}
+.section-5 .text .text-3{
+    color: purple;
+}
+.section-5.text-1~span{
+    color:red;
+}
 .text{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -39,4 +58,8 @@ main{
 }
 .section-4 img{
     width: 600px;
+}
+#main-words{
+    font-size: 24px;
+    color: pink;
 }
