@@ -1,0 +1,114 @@
+@import url("./reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto%20Slab:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster:wght@400&display=swap');
+
+@font-face{
+    font-family: "Gotham";
+    src: url(../fonts/Gotham/gotham_medium.woff) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: "Gotham";
+    src: url(../fonts/Gotham/gotham_bold.woff) format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Avenir";
+    src: url(../fonts/Avenir-next/AvenirNextLTPro-Regular.woff) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Avenir";
+    src: url(../fonts/Avenir-next/AvenirNextLTPro-Bold.woff);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+.wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.section-01>p{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: italic;
+    color: red;
+    text-align: justify;
+    text-decoration: underline;
+}
+.section-02 p{
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 800;
+    font-style: oblique;
+    color: rgba(207, 112, 34, 0.6);
+    text-decoration: overline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 0.5px;
+    text-decoration-color: #255dd4;
+    text-shadow: 3px -4px 3px rgb(34, 47, 73, 0.3);
+    text-transform: capitalize;
+    line-height: 150%; /* 24/16 */
+}
+.section-02+div{
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    margin-top: 30px;
+    color: rgba(224, 224, 85, 0.8);
+    text-align: right;
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-style: dashed;
+    text-underline-offset: 16px;
+    text-shadow: 1px 3px 2px rgba(69, 73, 85, 0.678), 2px 1px 3px rgba(118, 122, 134, 0.678);
+    text-transform: uppercase;
+    line-height: 212.5%; /* 34/16 */
+    letter-spacing: 0.35px;
+    word-spacing: 3px;
+    white-space: nowrap;
+}
+[class*='section-04']{
+    font-family: "Lobster";
+    font-weight: 500;
+    margin-top: 20px;
+    color: blue;
+    text-align: center;
+    text-decoration: line-through;
+    text-decoration-color: rgb(127, 255, 212);
+    text-decoration-thickness: 2px;
+    text-decoration-style: dotted;
+    text-transform: lowercase;
+    line-height: 75%; /* 12/16 */
+    word-spacing: 5px;
+}
+.section-05{
+    font-family: "Gotham";
+    color: purple;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 125%; /* 20/16 */
+    letter-spacing: 4px;
+}
+#section-06{
+    font-family: "Avenir";
+    font-weight: 700;
+    color: #a52a2a;
+    text-decoration: overline;
+    text-decoration-color: rgba(255, 255, 0, 0.35px);
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+    text-shadow: 2px -4px 2px rgba(97, 90, 90, 0.3), -2px 3px 1px rgba(138, 43, 226, 0.5), 5px -1.5px 2px rgba(128, 128, 128, 0.3);
+    text-transform: uppercase;
+    line-height: 187.5%; /* 30/16 */
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
