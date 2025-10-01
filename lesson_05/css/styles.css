@@ -31,7 +31,8 @@ section>h1{
     margin: 0 auto;
     text-align: center;
     display: inline-block;
-    width: 348px auto;
+    width: 348px;
+    width: auto;
     margin-bottom: 20px;
     margin-left: 15px;
     margin-right: 15px;
