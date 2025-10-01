@@ -6,7 +6,8 @@
 section{
     padding-top: 82px;
     padding: 82px 85px 82px 85px;
-    width: 1240px auto;
+    width: 1240px;
+    width: auto;
     margin: 0 auto;
 }
 section>h1{
@@ -21,7 +22,8 @@ section>h1{
 }
 .row1{
     max-width: 1200px;
-	margin: 0 auto;
+	margin: 0;
+    width: auto;
 	background-color: #794f45;
     margin-bottom: 68px;
 }
@@ -60,3 +62,4 @@ section>h1{
     margin-right: 68px;
     margin-left: 68px;
 }
+
