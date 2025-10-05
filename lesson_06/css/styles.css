@@ -1,0 +1,182 @@
+/*Обнулення*/
+@import url("./reset.css");
+/*Шрифти*/
+@import url("./fonts.css");
+
+
+nav{
+    background: linear-gradient(0deg,rgba(34, 193, 195, 0.3) 0%, rgba(253, 187, 45, 0.3) 100%);
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+section{
+    margin-top: 40px;
+    margin-right: 40px;
+    padding-left: 40px;
+    font-size: 28px;
+    font-weight: 500;
+    background: linear-gradient(0deg,rgba(34, 193, 195, 0.3) 0%, rgba(253, 187, 45, 0.3) 100%);
+}
+.block-1{
+    width: 500px;
+    padding: 8px;
+    border-left: 14px dotted green;
+    border-top: 13px dashed yellow;
+    border-right: 15px solid red;
+    border-bottom: 12px double blue;
+    outline: 11px solid pink;
+    outline-offset: 14px;
+    margin-bottom: 70px;
+}
+.circle{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url("../img/vareniki.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 7px -10px 100px 27px rgba(0, 0, 0, 0.32);
+}
+.block-2{
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 75px;
+    background: linear-gradient(0deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    border-bottom: 8px double rgba(123, 74, 168, 0.7);
+    border-right: 8px solid rgba(123, 74, 168, 0.7);
+    border-radius: 0% 0% 35% 0% / 25% 25% 24% 25%;
+
+    color: white;
+
+}
+.block-3{
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+    margin: 20px 0 20px 0;
+}
+.s02{
+    opacity: 0.9;
+}
+.s03{
+    opacity: 0.7;
+}
+.s04{
+    opacity: 50%;
+}
+.s05{
+    opacity: 0.3;
+}
+.s06{
+    opacity: 20%;
+}
+.s07{
+    opacity: 10%;
+}
+.s08{
+    opacity: 0;
+}
+.block-4{
+    width: 100%;
+    visibility: hidden;
+    margin-bottom: 20px;
+}
+.block-5{
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/borsh.jpg'), url('../img/idea.png'), url('../img/upgrade.jpg');
+    background-repeat: no-repeat;
+    background-position: left, 50%, right;
+    background-size: contain, 150px, 200px;
+    margin-bottom: 30px;
+}
+.block-6{
+    font-size: 80px;
+    font-weight: 900;
+    background-image: url('../img/honey.jpg');
+    color: transparent;
+    background-clip: text;
+}
+.block-7{
+    width: 100%;
+    height: 1000px;
+    background-image: url("../img/pattern2.jpg");
+    background-repeat: repeat;
+}
+/*------------------------------------*/
+
+header{
+    max-width: 100%;
+    height: 612px;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 114px 0 110px 0;
+    padding-left: 52.5%;
+}
+header h3{
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.title-01{
+    font-family: Montserrat;
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 100px;
+    display: block;
+}
+.title-02{
+    font-family: Montserrat;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 100px;
+}
+h1{
+    margin-bottom: 15.5px;
+}
+.download{
+    width: 308px;
+    border-top: 1px solid #2f302c;
+    padding-top: 36.5px;
+}
+header p{
+    color:#7e7f7c;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 500;
+    width: 374px;
+}
+/*-----------------------------------------*/
+.basic_plan-yes{
+	background: url("../img/Check\ badge\ yes.svg") 0 0 no-repeat;
+	margin-bottom: 15px;
+	min-height: 32px;
+	padding-left: 42px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.71; /* 24/14 */
+	letter-spacing: 0.2px;
+	color: #252B42;
+}
+.basic_plan-no{
+    background: url("../img/Check\ badge\ no.svg") 0 0 no-repeat;
+	margin-bottom: 15px;
+	min-height: 32px;
+	padding-left: 42px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.71; /* 24/14 */
+	letter-spacing: 0.2px;
+	color: #252B42;
+}
