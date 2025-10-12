@@ -1,0 +1,294 @@
+/*Обнулення*/
+@import url("./reset.css");
+/*Шрифти*/
+@import url("./fonts.css");
+
+nav{
+    width: 100%;
+    padding: 15px 5px 15px 5px;
+    background-color: #5c87b8;
+}
+nav h1{
+    font-family: Pacifico;
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+main{
+    background-color: #6e95c2;
+    padding: 25px 100px 25px 100px;
+}
+.rule>h2{
+    text-align: center;
+    font-size: 36px;
+    padding-bottom: 25px;
+    color: white;
+    font-family: Poppins;
+    font-weight: 600;
+}
+.advice>h3{
+    font-size: 32px;
+    color: white;
+    font-family: Poppins;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px 0 15px 0;
+    padding: 5px 0 5px 0;
+    margin: 0 auto;
+    width: 590px;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+.bg-game{
+    margin: 0 auto;
+    background-image: url('../img/8666420.avif');
+    background-size: contain;
+    height: 590px;
+    width: 590px;
+}
+.block{
+    background-color: #edf762;
+    border: 2px solid white;
+    visibility: hidden;
+}
+.block:nth-child(1){
+    width: 30px;
+    height: 35px; 
+    visibility: visible;
+}
+.block:nth-child(2){
+    width: 100px;
+    height: 20px;
+}
+.block:nth-child(3){
+    width: 30px;
+    height: 70px;
+    margin-left: 70px;
+}
+.block:nth-child(4){
+    width: 120px;
+    height: 25px;
+    margin-left: 70px;
+}
+.block:nth-child(5){
+    width: 30px;
+    height: 70px;
+    margin-left: 160px;
+}
+.block:nth-child(6){
+    width: 430px;
+    height: 25px;
+    margin-left: 160px;
+}
+.block:nth-child(7){
+    width: 30px;
+    height: 70px;
+    margin-left: 560px;
+}
+.block:nth-child(8){
+    width: 200px;
+    height: 25px;
+    margin-left: 390px;
+}
+.block:nth-child(9){
+    width: 350px;
+    height: 25px;
+    margin-left: 110px;
+}
+.block:nth-child(10){
+    width: 30px;
+    height: 80px;
+    margin-left: 110px;
+}
+.block:nth-child(11){
+    width: 30px;
+    height: 70px;
+    margin-left: 110px;
+}
+.block:nth-child(12){
+    width: 120px;
+    height: 25px;
+    margin-left: 110px;
+}
+.block:nth-child(13){
+    width: 30px;
+    height: 50px;
+    margin-left: 200px;
+    border-bottom: 4px solid black;
+}
+.block:nth-child(1):hover,
+.block:nth-child(2):hover,
+.block:nth-child(3):hover,
+.block:nth-child(4):hover,
+.block:nth-child(5):hover,
+.block:nth-child(6):hover,
+.block:nth-child(7):hover,
+.block:nth-child(8):hover,
+.block:nth-child(9):hover,
+.block:nth-child(10):hover,
+.block:nth-child(11):hover,
+.block:nth-child(12):hover,
+.block:nth-child(13):hover{
+    visibility: visible;
+    background-color: #edf762;
+    border: 2px solid white;
+}
+.block:nth-child(1):hover+div,
+.block:nth-child(2):hover+div,
+.block:nth-child(3):hover+div,
+.block:nth-child(4):hover+div,
+.block:nth-child(5):hover+div,
+.block:nth-child(6):hover+div,
+.block:nth-child(7):hover+div,
+.block:nth-child(8):hover+div,
+.block:nth-child(9):hover+div,
+.block:nth-child(10):hover+div,
+.block:nth-child(11):hover+div,
+.block:nth-child(12):hover+div,
+.block:nth-child(13):hover+div{
+    visibility: visible;
+    background-color: #78a1cf;
+    border: 2px solid white;
+}
+footer{
+    background-color: #6885a5;
+    color: white;
+    padding: 15px 5px 15px 5px;
+    font-size: 20px;
+}
+
+footer>a{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 36px;
+    font-family: Pacifico;
+    font-weight: 400;
+}
+footer>a:hover{
+    color: #edf762;
+}
+/*----------------------LIST-----------------------------*/
+section{
+    background-color: #252b42;
+    padding: 92px 150px 92px 150px;
+    margin: 0 auto;
+
+}
+.plan{
+    display: inline-block;
+    max-width: 351px;
+    min-height: 590px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+}
+.plan>*{
+    margin-bottom: 17px;
+}
+.plan-title{
+    color:#252b42;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    text-align: left;
+}
+.plan-price{
+    display: flex;
+    gap: 16px;
+}
+.plan-price-number>h2{
+    display: inline-block;
+    color: #252b42;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 700;
+    /*line-height: 57px;*/
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+.plan-price-text>h6{
+    /*margin-top: 8.5px;*/
+    color: #252b42;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-align: left;
+}
+.plan-price-text>p{
+    color: #737373;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    /*line-height: 75%; /* 12/16 */
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+.plan-description>p{
+    color: #737373;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+.plan-list-yes>li,
+.plan-list-no>li{
+    display: inline-block;
+    color: rgba(37, 43, 66, 1);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    vertical-align: middle;
+    margin-bottom: 23px;
+}
+.plan-list-yes>li::before{
+    content: " ";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    vertical-align: middle;
+    border-radius: 25px;
+    background-image: url('../img/Check\ badge.webp');
+
+}
+.plan-list-no>li::before{
+    content: " ";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    vertical-align: middle;
+    border-radius: 25px;
+    background-image: url('../img/Check\ badge-no.webp');
+}
+.plan-button{
+    width: 271px;
+    height: 40px;
+    border: 1px solid #252b42;
+    border-radius: 24px;
+    padding: 6px 24px 6px 24px;
+    align-items: center;
+    color: #252b42;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 28px; 
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+.plan-button:hover{
+    background-color: #ec5c2e;
+    color: white;
+    border: none;
+}
