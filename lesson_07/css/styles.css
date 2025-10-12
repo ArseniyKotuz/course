@@ -259,7 +259,7 @@ section{
     margin-right: 15px;
     vertical-align: middle;
     border-radius: 25px;
-    background-image: url('../img/Check\ badge.webp');
+    background-image: url('../img/Check-badge.webp');
 
 }
 .plan-list-no>li::before{
@@ -270,7 +270,7 @@ section{
     margin-right: 15px;
     vertical-align: middle;
     border-radius: 25px;
-    background-image: url('../img/Check\ badge-no.webp');
+    background-image: url('../img/Check-badge-no.webp');
 }
 .plan-button{
     width: 271px;
