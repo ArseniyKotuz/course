@@ -1,0 +1,21 @@
+/*Обнулення*/
+@import url("./reset.css");
+/*Шрифти*/
+@import url("./fonts.css");
+
+.container{
+    padding: 20px 50px 20px 50px;
+}
+.block{
+    display: flex;
+    gap: 15px;
+}
+.block:not(:last-child){
+    margin-bottom: 20px;
+}
+.block-text{
+    font-size: 28px;
+    line-height: 140%; 
+    font-family: Poppins;
+    font-weight: 600;
+}
