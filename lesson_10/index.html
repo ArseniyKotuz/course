@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Lesson 10</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="menu">
+            <div class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#entry" class="menu__link">Позиціювання в CSS</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#types" class="menu__link">Типи позіціювання</a>
+                        <ul class="menu__submenu submenu">
+                            <li class="submennu__item">
+                                <a href="#static" class="submenu__link">position: static</a>
+                            </li>
+                            <li class="submennu__item">
+                                <a href="#relative" class="submenu__link">position: relative</a>
+                            </li>
+                            <li class="submennu__item">
+                                <a href="#absolute" class="submenu__link">position: absolute</a>
+                            </li>
+                            <li class="submennu__item submennu__item--inner-menu">
+                                <a href="#fixed" class="submenu__link">position: fixed</a>
+                                <ul class="submenu__inner-menu inner-menu">
+                                    <li class="inner-menu__item">
+                                        <a href="#" class="inner-menu__link">!</a>
+                                    </li>
+                                    <li class="inner-menu__item">
+                                        <a href="#" class="inner-menu__link">?</a>
+                                    </li>
+                                    <li class="inner-menu__item">
+                                        <a href="#" class="inner-menu__link">%</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="submennu__item">
+                                <a href="#sticky" class="submenu__link">position: sticky</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Homework</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <main class="main">
+            <div class="main__container">
+                <h1 class="main__title">Позиціонування в CSS: типи, приклади та використання</h1>
+                <div class="main__entry entry">
+                    <h2 class="entry__title label">Позиціонування в CSS</h2>
+                    <div class="entry__block block">
+                        <p class="block__text" id="entry">Позиціонування в CSS — це основний інструмент для контролю над тим, як елементи веб-сторінки відображаються на екрані. Завдяки різним типам позиціонування, ми можемо змінювати положення елементів відносно їхніх батьківських елементів, вікна браузера чи інших об'єктів.</p>
+                    </div>
+                    <div class="entry__block block">
+                        <p class="block__text">CSS дозволяє визначити, як елемент має розташовуватись у документі. Властивість position відповідає за те, де буде знаходитися блок або елемент. Її значення впливають на розміщення елемента, яке може бути динамічним або фіксованим.</p>
+                    </div>
+                    <div class="entry__block block">
+                        <p class="block__text">element {<br>
+                            position: тип;<br>
+                            top: значення;<br>
+                            right: значення;<br>
+                            bottom: значення;<br>
+                            left: значення;<br>
+                            }</p>
+                    </div>
+                </div>
+                <div class="main__type type">
+                    <h2 class="type__label label" id="types">Типи позиціонування</h2>
+                    <h3 class="type__sublabel sublabel" id="static">Статичне позиціонування (static)</h3>
+                    <div class="type__block block">
+                        <p class="block__text">Це позиціонування за замовчуванням для всіх елементів. Воно не змінює положення елементів відносно їх природного потоку в документі. Статично позиціоновані елементи не реагують на властивості top, right, bottom і left.</p>
+                    </div>
+                    <div class="type__area-example area-example">
+                        <div class="area-example_square-1 square-1"></div>
+                        <div class="area-example_square-2 square-2"></div>
+                        <div class="area-example_square-3 square-3"></div>
+                    </div>
+    
+                    <h3 class="type__sublabel sublabel" id="relative">Відносне позиціонування (relative)</h3>
+                    <div class="type__block block">
+                        <p class="block__text">Елементи з відносним позиціонуванням зміщуються від свого звичайного місця у документі. Вони залишають "порожнє" місце на початковій позиції.</p>
+                    </div>
+                    <div class="type__area-example area-example">
+                        <div class="area-example_square-1 square-1"></div>
+                        <div class="area-example_square-2 square-2 square-2--relative"></div>
+                        <div class="area-example_square-3 square-3"></div>
+                    </div>
+                    <div class="type__block block">
+                        <p class="block__text">У цьому прикладі елемент зміститься верх на 30 пікселів і праворуч на 20 пікселів. </p>
+                    </div>
+    
+                    <h3 class="type__sublabel sublabel" id="absolute">Абсолютне позиціонування (absolute)</h3>
+                    <div class="type__block block">
+                        <p class="block__text">Елементи з абсолютним позиціонуванням розміщуються відносно найближчого батьківського елемента, який має інше, ніж static, позиціонування. Якщо такого елемента немає, елемент буде позиціонуватися відносно вікна браузера.</p>
+                    </div>
+                    <div class="type__area-example area-example area-example--relative">
+                        <div class="area-example_square-1 square-1"></div>
+                        <div class="area-example_square-2 square-2 square-2--absolute"></div>
+                        <div class="area-example_square-3 square-3"></div>
+                    </div>
+                    <div class="type__block block">
+                        <p class="block__text"> Тут елемент буде зміщений на 70 пікселів ліворуч.</p>
+                    </div>
+    
+                    <h3 class="type__sublabel sublabel" id="fixed">Фіксоване позиціонування (fixed)</h3>
+                    <div class="type__block block">
+                        <p class="block__text">Фіксовані елементи завжди залишаються на одному місці навіть при прокручуванні сторінки. Вони розміщуються відносно вікна браузера.</p>
+                    </div>
+                    <div class="type__area-example area-example">
+                        <div class="area-example_square-1 square-1"></div>
+                        <div class="area-example_square-2 square-2 square-2--fixed"></div>
+                        <div class="area-example_square-3 square-3"></div>
+                    </div>
+                    <div class="type__block block">
+                        <p class="block__text"> 
+                            Цей блок залишиться у нижньому правому куті незалежно від того, скільки користувач прокручує сторінку.</p>
+                    </div>
+
+                    <h3 class="type__sublabel sublabel" id="sticky">Липке позиціонування (sticky)</h3>
+                    <div class="type__block block">
+                        <p class="block__text">Липке позиціонування поєднує властивості відносного та фіксованого позиціонування. Елемент діє як відносно позиціонований, доки не досягне певної точки прокручування, після чого "прилипає" і веде себе як фіксований.</p>
+                    </div>
+                    <div class="type__area-example area-example area-example--photo">
+                        <div class="area-example_square-1 square-1"></div>
+                        <div class="area-example_square-2 square-2 square-2--sticky"></div>
+                        <div class="area-example_square-3 square-3"></div>
+                    </div>
+                    <div class="type__block block">
+                        <p class="block__text"> Цей блок залишиться на своєму місці, доки не буде прокручено до верху сторінки, де він стане фіксованим на 20px нижче верху сторінки.</p>
+                    </div>
+                </div>
+                <div class="homework">
+                    <h2 class="main__title main__title--homework">Homework</h2>
+                    <div class="block1">
+                        <ul class="block1__list">
+                            <li class="block1__item">
+                                <img src="./img/Check-badge-yes.svg" alt="check-badge" class="block1__check">
+                                <p class="block1__text">Unlimited product updates</p>
+                            </li>
+                            <li class="block1__item">
+                                <img src="./img/Check-badge-yes.svg" alt="check-badge" class="block1__check">
+                                <p class="block1__text">Unlimited product </p>
+                            </li>
+                            <li class="block1__item">
+                                <img src="./img/Check-badge-yes.svg" alt="check-badge-yes" class="block1__check">
+                                <p class="block1__text">Unlimited product </p>
+                            </li>
+                            <li class="block1__item block1__item--no">
+                                <img src="./img/Check-badge-no.svg" alt="check-badge-no" class="block1__check">
+                                <p class="block1__text">1GB  Cloud storage </p>
+                            </li>
+                            <li class="block1__item block1__item--no">
+                                <img src="./img/Check-badge-no.svg" alt="check-badge-no" class="block1__check">
+                                <p class="block1__text">Email and community support </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block2">
+                        <div class="block2__photo photo">
+                            <picture class="photo__img">
+                                <source srcset="img/Cleanser/Cleanser_1x.avif 1x, img/Cleanser/Cleanser_2x.avif 2x, img/Cleanser/Cleanser_3x.avif 3x" type="image/avif">
+                                <source srcset="img/Cleanser/Cleanser.webp 1x, img/Cleanser/Cleanser@2x.webp 2x, img/Cleanser/Cleanser@3x.webp 3x" type="image/webp">
+                                <img src="./img/Cleanser/Cleanser_1x.jpg" alt="A woman wearing a face mask, focusing on skincare, with a serene expression.">
+                            </picture>
+                            <h4 class="photo__label">Cleansers</h4>
+                            <a href="#" class="photo__link">More</a>
+                        </div>
+                        <div class="block2__photo photo">
+                            <picture class="photo__img">
+                                <source srcset="img/Eye-patches/eye-patches-1x.avif 1x, img/Eye-patches/eye-patches-2x.avif 2x, img/Eye-patches/eye-patches-3x.avif 3x" type="image/avif">
+                                <source srcset="img/Eye-patches/eye-patches.webp 1x, img/Eye-patches/eye-patches@2x.webp 2x, img/Eye-patches/eye-patches@3x.webp 3x" type="image/webp">
+                                <img src="./img/Eye-patches/eye-patches-(1).jpg" alt="A girl with red hair wearing a striped shirt, smiling and looking towards the camera.">
+                            </picture>
+                            <h4 class="photo__label">Eye Patches</h4>
+                            <a href="#" class="photo__link">More</a>
+                        </div>
+                        <div class="block2__photo photo">
+                            <picture class="photo__img">
+                                <source srcset="img/Mask/mask-1x.avif 1x, img/Mask/mask-2x.avif 2x, img/Mask/mask-3x.avif 3x" type="image/avif">
+                                <source srcset="img/Mask/mask.webp 1x, img/Mask/mask@2x.webp 2x, img/Mask/mask@3x.webp 3x" type="image/webp">
+                                <img src="./img/Mask/mask-1x.jpg" alt="A woman wearing a white face mask, focusing on her facial features and expression.">
+                            </picture>
+                            <h4 class="photo__label">Masks</h4>
+                            <a href="#" class="photo__link">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
