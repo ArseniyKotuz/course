@@ -1,0 +1,55 @@
+/*Обнулення*/
+@import url("./reset.css");
+/*Шрифти*/
+@import url("./fonts.css");
+
+body{
+    font-family: 'Lato';
+    font-weight: 500;
+    color: #2f302c;
+    text-align: center;
+}
+[class*="__container"]{
+    max-width: 1422px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.main__title{
+    margin-bottom: 72px;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 125%; /* 40/32 */
+}
+.main__feature{
+    display: inline-block;
+    max-width: 348px;
+    max-height: 208px;
+}
+.main__feature--2,
+main__feature--5{
+    margin-right: 68px;
+    margin-left: 68px;
+}
+.main__feature--4,
+.main__feature--5,
+.main__feature--6{
+    margin-top: 68px;
+}
+.main__feature > img{
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 24px;
+}
+.main__feature > h2{
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 125%; /* 20/16 */
+} 
+.main__feature > p{
+    color: rgba(126, 127, 124, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 125%; /* 20/16 */
+}
