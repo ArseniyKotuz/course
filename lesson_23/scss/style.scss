@@ -1,0 +1,36 @@
+/* Скидання стилів */
+@use "_reset.scss";
+
+/* Локальне підключення шрифтів */
+@use "_fonts.scss";
+
+/* Підключення шрифтів */
+
+/* Основні стилі */
+
+/* Значення за замовченням  */
+body {
+	color: #343434;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+}
+.wrapper {
+	position: relative;
+	/*min-height: 100%;*/
+	overflow: clip;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+/* ------------------------------------------------------------------- */
+[class*="__container"] {
+	max-width: 1237px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+/* ------------------------------------------------------------------- */
